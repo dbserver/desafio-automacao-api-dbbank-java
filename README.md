@@ -58,7 +58,7 @@ Validar o registro de uma nova conta de usuário através de uma tentativa de ac
 #### Passos:
 
 1. Efetuar o registro enviando uma requisição POST para o endpoint de contas com informações válidas do usuário (E-mail, Nome, Senha e Confirmação senha)
-  - Certificar-se também de setar a informação de saldo inicial com um valor superior a 0 (zero)
+    - Certificar-se também de setar a informação de saldo inicial com um valor superior a 0 (zero)
 2. Efetuar o acesso da conta do usuário enviando uma requisição POST para o endpoint de acesso com informações válidas da mesma (E-mail e Senha)
 
 #### Resultados Esperados:
