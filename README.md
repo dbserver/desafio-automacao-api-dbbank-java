@@ -88,15 +88,15 @@ Validar em uma conta de usuário destinatária a entrada de um valor monetário 
 #### Passos:
 
 1. Efetuar o acesso da conta de usuário originária enviando uma requisição POST para o endpoint de acesso com informações válidas da mesma (E-mail e Senha)
-  - Armazenar para utilização futura o token contido na propriedade *accessToken*, localizada na estrutura JSON do [payload](https://developer.mozilla.org/en-US/docs/Glossary/Payload_body) da resposta
+    - Armazenar para utilização futura o token contido na propriedade *accessToken*, localizada na estrutura JSON do [payload](https://developer.mozilla.org/en-US/docs/Glossary/Payload_body) da resposta
 2. Realizar uma transferência enviando uma requisição POST para o endpoint de transferências com informações válidas para a sua realização (Número da conta de usuário destinatária, Dígito da conta de usuário destinatária, Valor e Descrição) - O valor deve ser de R$ 500,00
-  - Anexar à requisição um [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) de esquema do tipo [bearer](https://swagger.io/docs/specification/authentication/bearer-authentication) contendo o *accessToken* da conta de usuário originária
+    - Anexar à requisição um [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) de esquema do tipo [bearer](https://swagger.io/docs/specification/authentication/bearer-authentication) contendo o *accessToken* da conta de usuário originária
 3. Efetuar a obtenção dos detalhes da conta de usuário originária enviando uma requisição GET para o endpoint de contas
-  - Anexar à requisição um [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) de esquema do tipo [bearer](https://swagger.io/docs/specification/authentication/bearer-authentication) contendo o *accessToken* da conta de usuário originária
+    - Anexar à requisição um [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) de esquema do tipo [bearer](https://swagger.io/docs/specification/authentication/bearer-authentication) contendo o *accessToken* da conta de usuário originária
 4. Efetuar o acesso da conta de usuário destinatária enviando uma requisição POST para o endpoint de acesso com informações válidas da mesma (E-mail e Senha)
-  - Armazenar para utilização futura o token contido na propriedade *accessToken*, localizada na estrutura JSON do [payload](https://developer.mozilla.org/en-US/docs/Glossary/Payload_body) da resposta
+    - Armazenar para utilização futura o token contido na propriedade *accessToken*, localizada na estrutura JSON do [payload](https://developer.mozilla.org/en-US/docs/Glossary/Payload_body) da resposta
 5. Efetuar a obtenção dos detalhes da conta de usuário destinatária enviando uma requisição GET para o endpoint de contas
-  - Anexar à requisição um [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) de esquema do tipo [bearer](https://swagger.io/docs/specification/authentication/bearer-authentication) contendo o *accessToken* da conta de usuário destinatária
+    - Anexar à requisição um [Authorization header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) de esquema do tipo [bearer](https://swagger.io/docs/specification/authentication/bearer-authentication) contendo o *accessToken* da conta de usuário destinatária
 
 #### Resultados Esperados:
 
